@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Hlavní třída, která spouští celou aplikaci pomocí Spring Boot.
@@ -19,4 +20,5 @@ public class Application {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
 		logger.info("Aplikace běží na adrese: http://localhost:{}", applicationContext.getEnvironment().getProperty("local.server.port"));
 	}
+
 }
